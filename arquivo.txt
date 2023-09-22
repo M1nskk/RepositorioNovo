@@ -1,0 +1,74 @@
+Algoritmo "Alanna's Lanchonete"
+var
+opc, oplanche, qtd :inteiro
+vltotal, total, vllanche, lanches :real
+
+inicio
+repita
+
+vllanche := 0
+
+escreval("    Alanna's Lanchonete    ")
+escreval("---------------------------")
+escreval("      1. Lanches;          ")
+escreval("      2. Finalizar Pedido. ")
+leia (opc)
+escolha opc
+
+caso 1
+   repita
+      escreval(" 1. Cheeseburguer - R$14,00 ")
+      escreval(" 2. X-Bacon - R$16,00 ")
+      escreval(" 3. Vegetariano - R$12,00 ")
+      escreval(" 4. Duplo - R$16,00 ")
+      escreval(" 5. Churras Burguer - R$25,00 ")
+      escreval(" 6. Fish Burguer - R$27,00 ")
+      escreval(" 7. Voltar ao menu anterior ")
+      leia(oplanche)
+      
+      se oplanche = 7 entao
+      interrompa
+      fimse
+      
+      escreval("Informe a quantidade")
+      leia(qtd)
+      
+      se oplanche = 1 entao
+          vllanche <- vllanche + 14 * qtd
+      senao
+      se oplanche = 2 entao
+          vllanche <- vllanche + 16 * qtd
+      senao
+      se oplanche = 3 entao
+          vllanche <- vllanche + 12 * qtd
+      senao
+      se oplanche = 4 entao
+          vllanche <- vllanche + 16 * qtd
+      senao
+      se oplanche = 5 entao
+          vllanche <- vllanche + 25 * qtd
+      senao
+      se oplanche = 6 entao
+          vllanche <- vllanche + 27 * qtd
+      fimse
+     fimse
+    fimse
+   fimse
+  fimse
+ fimse
+ 
+       ate oplanche = 7
+       escreval("....................................")
+       escreval("Valor do pedido = R$", vllanche,",00")
+       escreval("....................................")
+       lanches := lanches + vllanche
+       timer 2000
+       timer 0
+       fimescolha
+       ate opc = 2
+       
+       total := total + lanches
+       escreval(".......................................")
+       escreval("Valor total do pedido = R$", total,",00")
+       escreval(".......................................")
+ fimalgoritmo
