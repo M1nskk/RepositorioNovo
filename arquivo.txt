@@ -1,4 +1,4 @@
-Algoritmo "Alanna's Lanchonete"
+Algoritmo "Alanna's Lanchonete versao 02"
 var
 opc, oplanche, qtd :inteiro
 vltotal, total, vllanche, lanches :real
